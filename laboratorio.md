@@ -24,5 +24,16 @@ latest: Pulling from library/ubuntu
 Digest: sha256:2e863c44b718727c860746568e1d54afd13b2fa71b160f5cd9058fc436217b30
 Status: Downloaded newer image for ubuntu:latest
 
+# Eliminar
+@aalejandrozuleta ➜ /workspaces/labs-docker-dev (main) $ docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                     PORTS                                   NAMES
+38801de92f5f   ubuntu    "bash"                   4 minutes ago   Exited (0) 7 seconds ago                                           affectionate_agnesi
+92bd60d9c276   nginx     "/docker-entrypoint.…"   7 minutes ago   Up 7 minutes               0.0.0.0:8080->80/tcp, :::8080->80/tcp   infallible_almeida
 
+@aalejandrozuleta ➜ /workspaces/labs-docker-dev (main) $ docker rm 38801de92f5f
+38801de92f5f
 
+@aalejandrozuleta ➜ /workspaces/labs-docker-dev (main) $ docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                                   NAMES
+92bd60d9c276   nginx     "/docker-entrypoint.…"   9 minutes ago   Up 9 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   infallible_almeida
+@aalejandrozuleta ➜ /workspaces/labs-docker-dev (main) $ 

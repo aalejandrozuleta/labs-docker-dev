@@ -11,5 +11,8 @@ EXPOSE 80
 
 COPY index.html /usr/share/nginx/html/
 
+WORKDIR /app
+COPY myfile.txt .
+
 # Define el comando por defecto para ejecutar nginx en primer plano
 CMD ["nginx", "-g", "daemon off;"]

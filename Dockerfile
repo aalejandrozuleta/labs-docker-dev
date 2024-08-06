@@ -18,4 +18,4 @@ WORKDIR /app
 COPY . /app
 
 # Define el comando por defecto para ejecutar cuando se inicie el contenedor
-CMD ["bash"]
+CMD ["nginx", "-g", "daemon off;"]

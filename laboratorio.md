@@ -135,3 +135,41 @@ CMD ["nginx", "-g", "daemon off;"]
  => => writing image sha256:d56ca1da1651be5a921b488e69babbb6a4be6aa0f22ad57116600328712f8294                          0.0s
  => => naming to docker.io/library/my-nginx:latest    
 
+# script.py
+
+@aalejandrozuleta ➜ /workspaces/labs-docker-dev (main) $ docker build -t my-nginx:latest .
+[+] Building 25.2s (8/8) FINISHED                                                                           docker:default
+ => [internal] load build definition from Dockerfile                                                                  0.0s
+ => => transferring dockerfile: 111B                                                                                  0.0s
+ => [internal] load metadata for docker.io/library/python:3.9                                                         0.2s
+ => [internal] load .dockerignore                                                                                     0.1s
+ => => transferring context: 2B                                                                                       0.0s
+ => [1/3] FROM docker.io/library/python:3.9@sha256:65438c2e26dbf9f5db4b5553e332747fa20722c1b7c7ccc6f8480396ff4186db  21.9s
+ => => resolve docker.io/library/python:3.9@sha256:65438c2e26dbf9f5db4b5553e332747fa20722c1b7c7ccc6f8480396ff4186db   0.1s
+ => => sha256:9972540d93856f9ca3eff2cf803ffb472bf1687cd1a91365cc803a539281900b 2.52kB / 2.52kB                        0.0s
+ => => sha256:ca4e5d6727252f0dbc207fbf283cb95e278bf562bda42d35ce6c919583a110a0 49.55MB / 49.55MB                      1.7s
+ => => sha256:65438c2e26dbf9f5db4b5553e332747fa20722c1b7c7ccc6f8480396ff4186db 10.35kB / 10.35kB                      0.0s
+ => => sha256:83a59ab1a4811d0d1b135849e5071eff4d461a56def17589bd1b2f093aeeb5a1 7.31kB / 7.31kB                        0.0s
+ => => sha256:30b93c12a9c9326732b35d9e3ebe57148abe33f8fa6e25ab76867410b0ccf876 24.05MB / 24.05MB                      0.5s
+ => => sha256:10d643a5fa823cd013a108b2076f4d2edf1b2a921f863b533e83ea5ed8d09bd4 64.14MB / 64.14MB                      1.0s
+ => => sha256:d6dc1019d7935fe82827434da11bf96cf14e24979f8155e73b794286f10b7f05 211.24MB / 211.24MB                    3.5s
+ => => sha256:c7d45ab0573c09f3315112fe3e8d273f4b54dab9e8c3f315810afb743e794a28 6.16MB / 6.16MB                        1.2s
+ => => sha256:564d1c451ea70670b349d1250f5c0577416f873f6ee7b5cb33dafeb21c2c40a4 15.82MB / 15.82MB                      1.8s
+ => => extracting sha256:ca4e5d6727252f0dbc207fbf283cb95e278bf562bda42d35ce6c919583a110a0                             2.5s
+ => => sha256:91b87d81d4c8d2b201b71e0a5b07fe01ea4e6d1be30cdc8c30f96653b6663df3 2.70MB / 2.70MB                        2.0s
+ => => sha256:ddfb50ba1977e47749619886799b60da9f2a856fca3270ccb051d2f326489bd5 233B / 233B                            2.0s
+ => => extracting sha256:30b93c12a9c9326732b35d9e3ebe57148abe33f8fa6e25ab76867410b0ccf876                             0.6s
+ => => extracting sha256:10d643a5fa823cd013a108b2076f4d2edf1b2a921f863b533e83ea5ed8d09bd4                             2.5s
+ => => extracting sha256:d6dc1019d7935fe82827434da11bf96cf14e24979f8155e73b794286f10b7f05                             6.8s
+ => => extracting sha256:c7d45ab0573c09f3315112fe3e8d273f4b54dab9e8c3f315810afb743e794a28                             0.3s
+ => => extracting sha256:564d1c451ea70670b349d1250f5c0577416f873f6ee7b5cb33dafeb21c2c40a4                             0.6s
+ => => extracting sha256:ddfb50ba1977e47749619886799b60da9f2a856fca3270ccb051d2f326489bd5                             0.0s
+ => => extracting sha256:91b87d81d4c8d2b201b71e0a5b07fe01ea4e6d1be30cdc8c30f96653b6663df3                             0.3s
+ => [internal] load build context                                                                                     0.1s
+ => => transferring context: 55B                                                                                      0.0s
+ => [2/3] WORKDIR /app                                                                                                0.2s
+ => [3/3] COPY script.py .                                                                                            0.2s
+ => exporting to image                                                                                                2.1s
+ => => exporting layers                                                                                               2.0s
+ => => writing image sha256:811eedaffcc6d0566f5cbb44a9aa9413943feb57a3d2ac9fb37868c47613c3a5                          0.0s
+ => => naming to docker.io/library/my-nginx:latest   

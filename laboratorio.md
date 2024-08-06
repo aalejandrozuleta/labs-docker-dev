@@ -38,13 +38,6 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS        
 92bd60d9c276   nginx     "/docker-entrypoint.…"   9 minutes ago   Up 9 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   infallible_almeida
 @aalejandrozuleta ➜ /workspaces/labs-docker-dev (main) $ 
 
-# docker
-
-@aalejandrozuleta ➜ /workspaces/labs-docker-dev (main) $ docker build -t ubuntu-updated:latest .
-[+] Building 0.2s (1/1) FINISHED                                                                     docker:default
- => [internal] load build definition from Dockerfile                                                           0.0s
- => => transferring dockerfile: 2B                                                                             0.0s
-ERROR: failed to solve: failed to re
 
 # docker build
 @aalejandrozuleta ➜ /workspaces/labs-docker-dev (main) $ docker build -t ubuntu-updated:latest .
@@ -72,4 +65,3 @@ ERROR: failed to solve: failed to re
  => => writing image sha256:842f853d40a6e1eb28ee53616c772a9188a7954afadb550b8e5f64c0d6539a18                   0.0s
  => => naming to docker.io/library/ubuntu-updated:latest   
 
- g

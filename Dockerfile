@@ -9,5 +9,7 @@ RUN apt-get update && \
 # Exponer el puerto 80
 EXPOSE 80
 
+COPY index.html /usr/share/nginx/html/
+
 # Define el comando por defecto para ejecutar nginx en primer plano
 CMD ["nginx", "-g", "daemon off;"]

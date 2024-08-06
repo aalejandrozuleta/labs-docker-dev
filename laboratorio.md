@@ -65,3 +65,6 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS        
  => => writing image sha256:842f853d40a6e1eb28ee53616c772a9188a7954afadb550b8e5f64c0d6539a18                   0.0s
  => => naming to docker.io/library/ubuntu-updated:latest   
 
+# CMD
+# Define el comando por defecto para ejecutar cuando se inicie el contenedor
+CMD ["nginx", "-g", "daemon off;"]
